@@ -6,30 +6,31 @@
 </head>
 <body>
      <header>
-        <form>
-            <input type="search"  placeholder="Search task for to do">
-        </form>
+        <img src="images/Logo.svg" alt="logo">
+        <input type="search" placeholder="Search task for to do">
      </header>
-     <div>
-        <!-- function filterSelection() в JS для фильтра элементов --> 
-        <button onclick="filterSelection('all')"> All</button>
-        <button onclick="filterSelection('active')"> Active</button>
-        <button onclick="filterSelection('done')"> Done</button>
-     </div>
+     <main>
+     <nav>
+        <button> All</button>
+        <button> Active</button>
+        <button > Done</button>
+     </nav>
      <article>
-         <form>
-            <!-- function addElement() в JS для добавления элемента --> 
-             <h3>New Task</h3>
-             <input type="text">
-             <input type="button" onclick="addElement()" value="Add">
-         </form>
-         <main>
+        <section>
+            <form>
+                 <h3>New Task</h3>
+                 <input type="text">
+                 <input type="button" value="Add">
+                 </form>
+        </section>
+        <section>
             <ul>
                 <li>task 1</li>
                 <li>task 2</li>
                 <li>task 3</li>
             </ul>
-         </main>
+        </section>
      </article>
+     </main>
 </body>
 </html>
