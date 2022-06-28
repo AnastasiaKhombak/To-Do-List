@@ -5,8 +5,31 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-       <p> Здесь пока пусто( </p>
-    </header>
+     <header>
+        <form>
+            <input type="search"  placeholder="Search task for to do">
+        </form>
+     </header>
+     <div>
+        <!-- function filterSelection() в JS для фильтра элементов --> 
+        <button onclick="filterSelection('all')"> All</button>
+        <button onclick="filterSelection('active')"> Active</button>
+        <button onclick="filterSelection('done')"> Done</button>
+     </div>
+     <article>
+         <form>
+            <!-- function addElement() в JS для добавления элемента --> 
+             <h3>New Task</h3>
+             <input type="text">
+             <input type="button" onclick="addElement()" value="Add">
+         </form>
+         <main>
+            <ul>
+                <li>task 1</li>
+                <li>task 2</li>
+                <li>task 3</li>
+            </ul>
+         </main>
+     </article>
 </body>
 </html>
