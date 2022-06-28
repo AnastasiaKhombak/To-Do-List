@@ -6,7 +6,9 @@
 </head>
 <body>
     <header>
-        <p> Здесь пока пусто( </p>
+        <form action="/search/" method="GET">
+            <input type="search" placeholder="Search task for to do">
+        </form>
      </header>
      <nav>
          <ul>
@@ -16,8 +18,10 @@
          </ul>
      </nav>
      <article>
-         <form>
+         <form action="/search/" method="GET">
              <h3>New Task</h3>
+             <input type="text">
+             <input type="button" value="Add">
          </form>
      </article>
      <article>
