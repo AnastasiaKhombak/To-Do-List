@@ -2,35 +2,37 @@
 <html>
 <head>
 <title>To Do List</title>
+<link rel="stylesheet" href="normalize.css">
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
      <header>
-        <img src="images/Logo.svg" alt="logo">
-        <input type="search" placeholder="Search task for to do">
+        <img class="img img_logo" src="images/Logo.svg" alt="logo">
+        <input class="input input_search" type="search" placeholder="Search task for to do">
      </header>
-     <main>
-     <nav>
-        <button> All</button>
-        <button> Active</button>
-        <button > Done</button>
+     <main class="container">
+     <nav class="nav_container">
+        <button  class="nav_button"> All</button>
+        <button class="nav_button"> Active</button>
+        <button class="nav_button"> Done</button>
      </nav>
      <article>
-        <section>
+        <section class="section_container">
             <form>
-                 <h3>New Task</h3>
-                 <input type="text">
-                 <button type="button" value="Add"> Add</button>
-             </form>
+                 <h3 class="section_title">New Task</h3>
+                 <textarea class="text_block text_block_area" type=""></textarea>
+                 <button class="section_button" type="button" value="Add"> Add</button>
+            </form>
         </section>
         <section>
-            <ul>
-                <li>task 1</li>
-                <li>task 2</li>
-                <li>task 3</li>
+            <ul class="list" >
+                <li class="text_block text_block_li">Пофиксить баг</li>
+                <li class="text_block text_block_li">Прочитать про флексбоксы</li>
+                <li class="text_block text_block_li">Отдохнуть на выходных</li>
             </ul>
         </section>
      </article>
-     </main>
+    </main>
 </body>
 </html>
