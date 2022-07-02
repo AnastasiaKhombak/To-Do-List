@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>To Do List</title>
-<link rel="stylesheet" href="normalize.css">
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
-     <header>
-        <img class="img img_logo" src="images/Logo.svg" alt="logo">
-        <input class="input input_search" type="search" placeholder="Search task for to do">
+<body class="container" >
+     <header class="conatainer-header">
+        <div class="conatainer-header_img"><img src="images/Logo.svg" alt="logo"></div>
+        <div class="conatainer-header_input"><input class="input" type="search" placeholder="Search task for to do"></div>
      </header>
-     <main class="container">
-     <nav class="nav_container">
-        <button  class="nav_button"> All</button>
-        <button class="nav_button"> Active</button>
-        <button class="nav_button"> Done</button>
-     </nav>
-     <article>
-        <section class="section_container">
-            <form>
-                 <h3 class="section_title">New Task</h3>
-                 <textarea class="text_block text_block_area" type=""></textarea>
-                 <button class="section_button" type="button" value="Add"> Add</button>
-            </form>
-        </section>
-        <section>
-            <ul class="list" >
-                <li class="text_block text_block_li">Пофиксить баг</li>
-                <li class="text_block text_block_li">Прочитать про флексбоксы</li>
-                <li class="text_block text_block_li">Отдохнуть на выходных</li>
-            </ul>
-        </section>
-     </article>
-    </main>
+     <main class="container-main">
+        <nav class="container-nav">
+            <button class=" button container-nav_button" autofocus> All</button>
+            <button class=" button container-nav_button"> Active</button>
+            <button class=" button container-nav_button"> Done</button>
+        </nav>
+        <article>
+            <section>
+                <form class="container-section">
+                    <h3 class="container-section_title">New Task</h3>
+                    <textarea class="text-block container-section_textarea" type=""></textarea>
+                    <button class="button container-section_button" type="button" value="Add"> Add</button>
+                </form>
+            </section>
+            <section>
+                <ul class="container-ul" >
+                    <li class="text-block text-block_li">
+                        <p class="li-item_text">  <img class="img-star" src="images/Star.svg"> Отдохнуть на выходных</p>
+                        <button class="button li-item_mark">
+                            <p class="mark-text">Mark important</p>
+                        </button>
+                        <button class="button li-item_delete"><img src="images/Delete.svg" alt="delete"></button>
+
+                    </li>
+                    <li class="text-block text-block_li">
+                        <p class="li-item_text">  <img class=" img-star" src="images/Star.svg"> Отдохнуть на выходных</p>
+                        <button class="button li-item_mark">
+                            <p class="mark-text">Mark important</p>
+                        </button>
+                        <button class="button li-item_delete"><img src="images/Delete.svg" alt="delete"></button>
+
+                    </li>
+                    <li class="text-block text-block_li">
+                        <p class="li-item_text">  <img class="img-star" src="images/Star.svg"> Отдохнуть на выходных</p>
+                        <button class="button li-item_mark">
+                            <p class="mark-text">Mark important</p>
+                        </button>
+                        <button class="button li-item_delete"><img src="images/Delete.svg" alt="delete"></button>
+
+                    </li>
+                </ul>
+            </section>
+        </article>
+     </main>
 </body>
 </html>
