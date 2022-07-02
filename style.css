@@ -1,10 +1,214 @@
-html, body{
-    padding: 0;
-    margin: 0;
+html{
     background: #FFFFFF;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
     color: #53565A;
     line-height: 19px;
+    background: url(images/Background.svg) no-repeat;
+    background-position: 90% 100%;
+    background-attachment: fixed;
+    background-size: contain;
+    outline: none;
+}
+@media(max-width: 575px){
+    .conatainer-header{
+        flex-direction: column;
+    }
+    .container-nav{
+        flex-direction: column;
+    }
+    .container-nav_button{
+        width: 100%;
+    }
+    .container-nav_button:focus {
+        color: #53565A;
+        /*border: none; не работает*/
+    }
+}
+.container{
+    display: flex;
+    max-width: 840px;
+    max-height: 100%;
+    flex-direction: column;
+}
+/*Header*/
+.conatainer-header{
+    display: flex;
+    max-width: 776px;
+    max-height: auto;
+    margin: 22px 25px 30px 20px;
+}
+.conatainer-header_img{
+    max-width: 100%;
+    min-height: 45px;
+    margin-right: 20px;
+}
+.conatainer-header_input{
+    max-width: 582px;
+    flex: 0 1 582px;
+    max-height: 45px;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    background:url(images/Search.svg) no-repeat center left, linear-gradient(0deg, #F6F6F6, #F6F6F6), #FEFEFE;
+    background-position-x: 15px;
+    padding-left: 42px;
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.3);
+    border: 1px solid #E2E2E2;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    outline: none;
+	-moz-appearance: none;
+}
+/*Main*/
+.container-main{
+    display: flex;
+    flex-direction: column;
+    max-width: 776px;
+    margin: 0px 25px 30px 20px;
+}
+/*Nav*/
+.container-nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    border-top: 1px solid #E2E2E2;
+}
+.container-nav_button{
+    min-width: 175px;
+    min-height: 46px;
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+    color: #a9aaac;
+    background: #FFFFFF;
+    
+}
+.container-nav_button:focus {
+    border-top: 3px solid #2f80ed ;
+    color: #53565A;
+}
+.container-nav_button:focus-visible{
+    outline:none;
+}
+.container-nav_button:hover {
+    color: #53565A;
+    cursor: pointer;
+}
+/*Article*/
+.container-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+.container-section_title{
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+.container-section_button{
+    align-self: flex-end;
+    width: 190px;
+    height: 36px;
+    background: #2F80ED;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    margin-top: 11px;
+
+}
+.container-section_button:hover {
+    cursor: pointer;
+}
+.text-block{
+    background: #FFFFFF;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 400;
+    padding: 16px 10px 13px 23px;
+    box-sizing: border-box;
+
+}
+.container-section_textarea{
+    max-width: 776px;
+    max-height: 90px;
+    border: 1px solid #DDDBDA;
+    outline: none;
+	-moz-appearance: none;
+    resize: none;
+
+}
+.container-ul{
+    padding-left: 0;
+}
+.text-block_li{
+    display: flex;
+    width: 100%;
+    height: 109px;
+    list-style-type: none;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 17px;
+    padding: 0px 5px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.text-block_li:hover {
+    border: 1px solid rgba(47, 128, 237, 0.5);
+    box-shadow: 0px 6px 20px rgba(47, 128, 237, 0.5);
+}
+.img-star {
+    width: 20px;
+    height: 19px;
+    /* visibility: hidden; */
+}
+.li-item_text {
+    flex-grow: 1;
+}
+.button {
+    outline:none;
+    border: none;
+}
+.li-item_mark {
+    padding: 10px 16px;
+    background-color: #38b46c;
+    border-radius: 10px;
+    margin: 11px 15px;
+}
+.li-item_mark:hover{
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.mark-text{
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+
+}
+.li-item_delete {
+    padding: 0;
+    margin-top: 10px;
+    max-height: 40px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.li-item_delete:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
 }

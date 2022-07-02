@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>To Do List</title>
-<link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
-     <header>
-        <img src="images/Logo.svg" alt="logo">
-        <input type="search" placeholder="Search task for to do">
+<body class="container" >
+     <header class="conatainer-header">
+        <div class="conatainer-header_img"><img src="images/Logo.svg" alt="logo"></div>
+        <div class="conatainer-header_input"><input class="input" type="search" placeholder="Search task for to do"></div>
      </header>
-     <main>
-     <nav>
-        <button> All</button>
-        <button> Active</button>
-        <button > Done</button>
-     </nav>
-     <article>
-        <section>
-            <form>
-                 <h3>New Task</h3>
-                 <input type="text">
-                 <button type="button" value="Add"> Add</button>
-             </form>
-        </section>
-        <section>
-            <ul>
-                <li>task 1</li>
-                <li>task 2</li>
-                <li>task 3</li>
-            </ul>
-        </section>
-     </article>
+     <main class="container-main">
+        <nav class="container-nav">
+            <button class=" button container-nav_button" autofocus> All</button>
+            <button class=" button container-nav_button"> Active</button>
+            <button class=" button container-nav_button"> Done</button>
+        </nav>
+        <article>
+            <section>
+                <form class="container-section">
+                    <h3 class="container-section_title">New Task</h3>
+                    <textarea class="text-block container-section_textarea" type=""></textarea>
+                    <button class="button container-section_button" type="button" value="Add"> Add</button>
+                </form>
+            </section>
+            <section>
+                <ul class="container-ul" >
+                    <li class="text-block text-block_li">
+                        <p class="li-item_text">  <img class="img-star" src="images/Star.svg"> Отдохнуть на выходных</p>
+                        <button class="button li-item_mark">
+                            <p class="mark-text">Mark important</p>
+                        </button>
+                        <button class="button li-item_delete"><img src="images/Delete.svg" alt="delete"></button>
+
+                    </li>
+                    <li class="text-block text-block_li">
+                        <p class="li-item_text">  <img class=" img-star" src="images/Star.svg"> Отдохнуть на выходных</p>
+                        <button class="button li-item_mark">
+                            <p class="mark-text">Mark important</p>
+                        </button>
+                        <button class="button li-item_delete"><img src="images/Delete.svg" alt="delete"></button>
+
+                    </li>
+                    <li class="text-block text-block_li">
+                        <p class="li-item_text">  <img class="img-star" src="images/Star.svg"> Отдохнуть на выходных</p>
+                        <button class="button li-item_mark">
+                            <p class="mark-text">Mark important</p>
+                        </button>
+                        <button class="button li-item_delete"><img src="images/Delete.svg" alt="delete"></button>
+
+                    </li>
+                </ul>
+            </section>
+        </article>
      </main>
 </body>
 </html>
